@@ -10,7 +10,7 @@ Deployed the model as a web application using streamlit.
 
 ![Screenshot 2022-07-08 185712](https://user-images.githubusercontent.com/64166865/178001224-9ca9f8e1-081b-441c-9557-1260a44518c3.png)
 
-### Getting 6 recommendations for a particular movie
+### Getting 6 recommendations for every movie
 
 ![Screenshot 2022-07-08 063231](https://user-images.githubusercontent.com/64166865/177999245-15cda85e-4458-4d7a-9d5b-46d60e0a504c.png)
 

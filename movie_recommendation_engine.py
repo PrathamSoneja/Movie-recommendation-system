@@ -72,6 +72,9 @@ def movie_details(recommended_movies):
             res = requests.get(url=url_movie)
             soup = BeautifulSoup(res.content, 'html.parser')
             data = json.loads(soup.text)
+
+            if data['results'] is None or len(data['results']) == 0 or len(data['errorMessage']) != 0:
+                continue
             best_match = data['results'][0]
 
             #"""movie_id, movie_poster, movie_title"""
@@ -156,14 +159,15 @@ else:
 
                 with next(column_iter):
                     response = requests.get(image_url)
-                    image = Image.open(BytesIO(response.content))
-
+                    image = Image.open(BytesIO(response.content)).resize([578, 867])
                     st.image(image, caption=title, use_column_width='always', width=5)
                     st.write(f'Release Year : {release_year}')
                     st.write(f'Movie Rating : {movie_rating}')
                     st.write(f'Trailer link : {trailer_link}')
                     expander = st.expander('Trailer Description')
                     expander.write(f'{trailer_desc}')
+
+            st.write('')
 
     else:
         st.write(f'{recommended_movies}')

@@ -5,8 +5,9 @@ I have used the MovieLens data set(small) which consists of 100,000 ratings and 
 
 Made a web application using streamlit.
 
-##home page
+Home page
 
-#getting 6 recommendations for a particular movie
+Getting 6 recommendations for a particular movie
+
 ![Screenshot 2022-07-08 063231](https://user-images.githubusercontent.com/64166865/177999245-15cda85e-4458-4d7a-9d5b-46d60e0a504c.png)
 

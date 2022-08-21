@@ -12,8 +12,8 @@ import keyboard
 
 
 #importing data
-ratings = pd.read_csv('Movie_Recommendation_Engine_Data/ratings.csv')
-movies = pd.read_csv('C:\Python Projects\Movie_Recommendation_Engine_Data\movies.csv')
+ratings = pd.read_csv('ratings.csv')
+movies = pd.read_csv('movies.csv')
 
 data = ratings.pivot(index = 'movieId', columns = 'userId', values = 'rating')
 data.fillna(0, inplace=True)

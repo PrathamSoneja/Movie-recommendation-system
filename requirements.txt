@@ -6,7 +6,7 @@ pandas==1.4.3
 requests==2.28.1
 scipy==1.8.1
 streamlit==1.10.0
-sklearn
+scikit-learn
 time
 PIL
 json

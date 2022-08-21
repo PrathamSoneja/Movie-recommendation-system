@@ -7,7 +7,3 @@ requests==2.28.1
 scipy==1.8.1
 streamlit==1.10.0
 scikit-learn
-time
-PIL
-json
-io
